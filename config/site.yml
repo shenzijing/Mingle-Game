@@ -31,10 +31,8 @@ game:
 navigation:
   - title: Home
     path: /
-  - title: Rules
-    path: /about
-  - title: Contact
-    path: /contact
+  - title: How to Play
+    path: /how-to-play
 
 footer:
   columns:
@@ -42,11 +40,9 @@ footer:
       content: Experience the intense psychological challenge from Squid Game Season 2. Test your survival instincts and strategic thinking in this thrilling game of trust and betrayal.
     - title: Quick Links
       links:
-        - title: Game Rules
-          path: /about
+        - title: How to Play
+          path: /how-to-play
         - title: Terms of Service
           path: /terms
-        - title: Contact Us
-          path: /contact
     - title: Connect With Us
       social: true

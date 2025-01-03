@@ -4,13 +4,15 @@ import { Inter } from 'next/font/google';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { getSiteConfig } from '@/lib/config';
 
 const inter = Inter({ subsets: ['latin'] });
+const config = getSiteConfig();
 
 export const metadata: Metadata = {
-  title: 'Incredibox Game - Create Your Own Music Beat',
-  description: 'Play Incredibox online and create amazing music beats. Mix different sounds and create your own unique music composition in this fun and interactive game.',
-  keywords: 'incredibox, music game, beat maker, online game, music creation',
+  title: config.site.title,
+  description: config.site.description,
+  keywords: config.site.keywords,
 };
 
 export default function RootLayout({

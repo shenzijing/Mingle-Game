@@ -23,7 +23,7 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             <Link href="/" className="hover:text-primary">Home</Link>
-            <Link href="/about" className="hover:text-primary">How to Play</Link>
+            <Link href="/how-to-play" className="hover:text-primary">How to Play</Link>
             <ModeToggle />
           </div>
 
@@ -45,7 +45,7 @@ export default function Navigation() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/" className="block px-3 py-2 hover:text-primary">Home</Link>
-            <Link href="/about" className="block px-3 py-2 hover:text-primary">How to Play</Link>
+            <Link href="/how-to-play" className="block px-3 py-2 hover:text-primary">How to Play</Link>
             <div className="px-3 py-2">
               <ModeToggle />
             </div>

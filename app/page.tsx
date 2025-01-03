@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Home() {
   const config = getSiteConfig();
-  
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
@@ -16,14 +16,9 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8">
             {config.site.description}
           </p>
-          <div className="flex justify-center gap-4">
-            <Link href="/about">
-              <Button size="lg" variant="default">Learn Rules</Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline">Contact Us</Button>
-            </Link>
-          </div>
+          <Link href="/how-to-play">
+            <Button size="lg" variant="default">Learn Rules</Button>
+          </Link>
         </div>
 
         <div className="mb-16">
@@ -47,7 +42,7 @@ export default function Home() {
             Join thousands of players in this intense psychological challenge.
           </p>
           <Button size="lg" asChild>
-            <Link href="/about">Get Started</Link>
+            <Link href="/how-to-play">Get Started</Link>
           </Button>
         </div>
       </div>
