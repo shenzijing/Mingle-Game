@@ -1,6 +1,7 @@
 import GameCard from '@/components/game/GameCard';
 import GameFeatures from '@/components/game/GameFeatures';
 import GameRules from '@/components/game/GameRules';
+import { MingleSong } from '@/components/game/MingleSong';
 import { getSiteConfig } from '@/lib/config';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -30,6 +31,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-8">Game Features</h2>
           <GameFeatures config={config} />
         </div>
+
+        <MingleSong />
 
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">How to Play Mingle</h2>
