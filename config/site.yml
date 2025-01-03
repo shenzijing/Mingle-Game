@@ -1,0 +1,52 @@
+site:
+  name: Mingle Game
+  title: Mingle Game - The Ultimate Survival Challenge from Squid Game
+  description: Experience the intense psychological challenge from Squid Game Season 2. Form alliances, make split-second decisions, and test your survival instincts in this thrilling game of trust and betrayal.
+  keywords: mingle game, squid game, survival game, psychological challenge, strategy game
+  logo: Users
+  social:
+    twitter: https://twitter.com/squidgame
+    github: https://github.com/minglegame
+  contact:
+    email: support@minglegame.com
+    twitter: "@MingleGame"
+
+game:
+  name: Mingle Game
+  iframe: https://minglegame-demo.com/embed
+  features:
+    - title: Real-time Strategic Gameplay
+    - title: Dynamic Group Formation
+    - title: Time-based Challenges
+    - title: Psychological Elements
+    - title: Multiple Game Modes
+  
+  howToPlay:
+    - Start on the spinning platform and wait for it to stop
+    - Listen for the announced group number
+    - Form groups matching the exact number within 30 seconds
+    - Reach a designated room with your group
+    - Survive each round by making quick decisions
+
+navigation:
+  - title: Home
+    path: /
+  - title: Rules
+    path: /about
+  - title: Contact
+    path: /contact
+
+footer:
+  columns:
+    - title: About Mingle Game
+      content: Experience the intense psychological challenge from Squid Game Season 2. Test your survival instincts and strategic thinking in this thrilling game of trust and betrayal.
+    - title: Quick Links
+      links:
+        - title: Game Rules
+          path: /about
+        - title: Terms of Service
+          path: /terms
+        - title: Contact Us
+          path: /contact
+    - title: Connect With Us
+      social: true
