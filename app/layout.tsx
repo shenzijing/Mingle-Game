@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: config.site.title,
   description: config.site.description,
   keywords: config.site.keywords,
+  icons: {
+    icon: '/mingle-game.png', // 或其他扩展名
+  },
 };
 
 export default function RootLayout({
