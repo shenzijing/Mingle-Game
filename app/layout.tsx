@@ -26,7 +26,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navigation />
-            <main className="flex-grow">
+            <main className="flex-grow max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8">
               {children}
             </main>
             <Footer />
