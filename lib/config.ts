@@ -4,16 +4,16 @@ import yaml from 'yaml';
 import { marked } from 'marked';
 import { SiteConfig } from '@/types/site';
 
-// 读取YAML配置文件
+// Read YAML config file
 export function getSiteConfig(): SiteConfig {
   const configPath = path.join(process.cwd(), 'config/site.yml');
   const configFile = fs.readFileSync(configPath, 'utf8');
   return yaml.parse(configFile);
 }
 
-// 读取Markdown内容
-export function getMarkdownContent(name: string): string {
+// Read and parse Markdown content
+export async function getMarkdownContent(name: string): Promise<string> {
   const mdPath = path.join(process.cwd(), `content/${name}.md`);
   const mdContent = fs.readFileSync(mdPath, 'utf8');
-  return marked(mdContent);
+  return await marked(mdContent);
 }
