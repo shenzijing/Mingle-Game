@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="hover:text-primary">Game Rules</Link></li>
+              <li><Link href="/how-to-play" className="hover:text-primary">How to Play</Link></li>
               <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
               <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
             </ul>
