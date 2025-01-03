@@ -5,9 +5,14 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { getSiteConfig } from '@/lib/config';
+import { GoogleTagManager } from '@/components/GoogleTagManager';
+import { GoogleTagManagerNoScript } from '@/components/GoogleTagManagerNoScript';
 
 const inter = Inter({ subsets: ['latin'] });
 const config = getSiteConfig();
+
+// Replace with your GTM ID
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX';
 
 export const metadata: Metadata = {
   title: config.site.title,
@@ -23,6 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <GoogleTagManager gtmId={GTM_ID} />
+        <GoogleTagManagerNoScript gtmId={GTM_ID} />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navigation />
