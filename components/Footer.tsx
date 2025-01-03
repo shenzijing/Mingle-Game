@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -20,8 +21,16 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Mingle Game. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted-foreground">&copy; {new Date().getFullYear()} Mingle Game. All rights reserved.</p>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Mail className="h-4 w-4" />
+              <a href="mailto:info@minglegame.net" className="hover:text-primary">
+                info@minglegame.net
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
