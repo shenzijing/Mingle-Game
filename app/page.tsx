@@ -45,7 +45,7 @@ export default function Home() {
             Join thousands of players in this intense psychological challenge.
           </p>
           <Button size="lg" asChild>
-            <Link href="/how-to-play">Get Started</Link>
+            <Link href="https://www.roblox.com/games/7554888362/PENTA-MINGLE-Squid-Game-X" target="_blank">Get Started</Link>
           </Button>
         </div>
       </div>
