@@ -5,6 +5,7 @@ import { MingleSong } from '@/components/game/MingleSong';
 import { getSiteConfig } from '@/lib/config';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { ScrollButton } from '@/components/ScrollButton';
 
 export default function Home() {
   const config = getSiteConfig();
@@ -17,9 +18,14 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8">
             {config.site.description}
           </p>
-          <Link href="/how-to-play">
-            <Button size="lg" variant="default">Learn Rules</Button>
-          </Link>
+          <div className="flex justify-center gap-4">
+            <Link href="/how-to-play">
+              <Button size="lg" variant="default">Learn Rules</Button>
+            </Link>
+            <ScrollButton targetId="get-started">
+              <Button size="lg" variant="secondary">Play Mingle Game</Button>
+            </ScrollButton>
+          </div>
         </div>
 
         <div className="mb-16">
@@ -39,7 +45,7 @@ export default function Home() {
           <GameRules />
         </div>
 
-        <div className="bg-muted rounded-lg p-8 text-center">
+        <div id="get-started" className="bg-muted rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Test Your Survival Instincts?</h2>
           <p className="text-muted-foreground mb-6">
             Join thousands of players in this intense psychological challenge.
