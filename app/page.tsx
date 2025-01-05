@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Experience the Challenge</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">What is Mingle game?</h2>
           <GameCard config={config} />
         </div>
 

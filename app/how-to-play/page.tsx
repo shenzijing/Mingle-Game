@@ -1,11 +1,23 @@
 import { GameSection } from "@/components/how-to-play/GameSection";
 import { StatCard } from "@/components/how-to-play/StatCard";
+import { YouTubeEmbed } from "@/components/game/YouTubeEmbed";
+import { Card } from "@/components/ui/card";
 
 export default function HowToPlay() {
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-8">How to Play Mingle</h1>
+
+                <Card className="mb-8">
+                    <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-4">What are the rules of mingle?</h2>
+                        <YouTubeEmbed videoId="cacTG7VQOV8?rel=0&playlist=cacTG7VQOV8&loop=0&end=134" />
+                        <p className="mt-4 text-muted-foreground">
+                            Watch this video to understand the intense gameplay and strategic elements of Mingle Game.
+                        </p>
+                    </div>
+                </Card>
 
                 <GameSection title="Understanding the Basics">
                     <p className="text-lg mb-4">
